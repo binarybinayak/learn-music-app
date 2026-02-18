@@ -1,6 +1,9 @@
 import { Router, Request, Response } from "express";
 import { INSTRUMENTS } from "../config/constants";
-import { getQuestion, questionProp } from "../services/nameThatNote.services";
+import {
+  getQuestion,
+  nameThatNoteQuestionProp,
+} from "../services/nameThatNote.services";
 
 const router = Router();
 
@@ -21,7 +24,7 @@ router.get("/:instrument", (req: Request, res: Response) => {
     ? difficulty
     : "medium";
 
-  const question: questionProp = getQuestion(
+  const question: nameThatNoteQuestionProp = getQuestion(
     instrument.replace("_", " "),
     level,
   );
