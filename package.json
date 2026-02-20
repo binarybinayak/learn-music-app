@@ -1,23 +1,23 @@
 {
-  "name": "learn-music-api",
+  "name": "learn-music-app",
   "version": "1.0.0",
-  "description": "This is a music learning app",
-  "license": "ISC",
-  "author": "Binayak Sadhukhan",
-  "type": "commonjs",
-  "main": "server.js",
+  "description": "This is learn music app",
+  "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binarybinayak/learn-music-api.git"
   },
-  "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/node": "^25.2.3",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.9.3"
-  }
+  "author": "Binayak Sadhukhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binarybinayak/learn-music-api/issues"
+  },
+  "homepage": "https://github.com/binarybinayak/learn-music-api#readme",
+  "workspaces": [
+    "apps/server",
+    "apps/client"
+  ]
 }
