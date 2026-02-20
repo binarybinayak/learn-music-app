@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binarybinayak/learn-music-api.git"
+    "url": "git+https://github.com/binarybinayak/learn-music-app.git"
   },
   "author": "Binayak Sadhukhan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/binarybinayak/learn-music-api/issues"
+    "url": "https://github.com/binarybinayak/learn-music-app/issues"
   },
-  "homepage": "https://github.com/binarybinayak/learn-music-api#readme",
+  "homepage": "https://github.com/binarybinayak/learn-music-app#readme",
   "workspaces": [
     "apps/server",
     "apps/client"
