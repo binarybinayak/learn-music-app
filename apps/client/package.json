@@ -1,0 +1,12 @@
+{
+  "name": "learn-music-webui",
+  "version": "1.0.0",
+  "description": "This is a music learning app",
+  "license": "ISC",
+  "author": "Binayak Sadhukhan",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
