@@ -8,7 +8,9 @@
   "main": "server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "link:shared": "npm link @learn-music/shared"
   },
   "dependencies": {
     "express": "^5.2.1"

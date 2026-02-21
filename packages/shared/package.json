@@ -4,6 +4,13 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "link": "npm link"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.29.0",
+    "@babel/types": "^7.29.0",
+    "csstype": "^3.2.3",
+    "undici-types": "^7.22.0"
   }
 }
