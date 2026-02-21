@@ -5,8 +5,13 @@ import fs from "fs";
 
 const app = express();
 
-// Serve sounds folder
-app.use("/sounds", express.static(path.join(__dirname, "../sounds")));
+const soundsPathInDist = path.resolve(__dirname, "../sounds");
+const soundsPathAtServerRoot = path.resolve(__dirname, "../../sounds");
+const soundsPath = fs.existsSync(soundsPathInDist)
+  ? soundsPathInDist
+  : soundsPathAtServerRoot;
+
+app.use("/sounds", express.static(soundsPath));
 
 // API routes
 app.use("/api", apiRouter);

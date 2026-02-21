@@ -10,9 +10,10 @@
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "link:shared": "npm link @learn-music/shared"
+    "link:shared": "npm link @learn-music-app/shared"
   },
   "dependencies": {
+    "@learn-music-app/shared": "1.0.0",
     "cors": "^2.8.6",
     "express": "^5.2.1"
   },
