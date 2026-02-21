@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev -w apps/server\" \"npm run dev -w apps/client\"",
+    "link": "npm run build -w packages/shared && npm run link -w packages/shared && npm run link:shared -w apps/server && npm run link:shared -w apps/client",
+    "build": "npm run build -w apps/server && npm run build -w apps/client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/binarybinayak/learn-music-app#readme",
   "workspaces": [
+    "packages/shared",
     "apps/server",
     "apps/client"
   ],
